@@ -4,12 +4,401 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
     <title>SubBean</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="my_styles\styles.css">
 </head>
 
 <body>
-    
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+
+            <div class="navbar-icon">
+                <img src="assets/favicon_text.png" width="170" height="170">
+            </div>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    <strong>О нас</strong>
+                </a>
+
+                <a class="navbar-item">
+                    <strong>Контакты</strong>
+                </a>
+
+                <div class="panel-block">
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" placeholder="Search" style="width: 35rem;" />
+                        <span class="icon is-left">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button basket">
+                            <img src="assets/basket.png">
+                        </a>
+                        <a class="button is-primary">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero custom-hero">
+        <div class="hero-body">
+            <div class="overlay"></div>
+            <div class="container has-text-left">
+                <h1 class="title is-1">
+                    Найди свой уникальный вкус
+                </h1>
+                <h2 class="subtitle is-4">
+                    Текст с описанием задачи маркетплейса...
+                </h2>
+                <div class="buttons is-left">
+                    <a href="#pricing" class="button is-large is-light">
+                        <span>За покупками!</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="advantages-container">
+        <div class="advantages-title">
+            Почему именно мы
+        </div>
+        <nav class="level is-align-items-flex-start">
+            <div class="level-item has-text-centered">
+                <img src="assets/coffee-bean-hot.png" style="width: 40px;">
+                <p class="title">Обжарка перед отправкой</p>
+                <p class="subtitle">Мы работаем напрямую с крафтовыми<br>
+                    обжарщиками, поэтому кофе приходит<br>
+                    максимально свежим.</p>
+            </div>
+            <div class="level-item has-text-centered">
+                <img src="assets/barista.png" style="width: 40px;">
+                <p class="title">Кофе от разных обжарщиков</p>
+                <p class="subtitle">Открывайте новые вкусы от небольших<br>
+                    независимых кофе-обжарочных компаний.</p>
+            </div>
+            <div class="level-item has-text-centered">
+                <img src="assets/quality.png" style="width: 40px;">
+                <p class="title">Только качественный кофе</p>
+                <p class="subtitle">Мы отбираем только качественные<br>
+                    small-batch обжарки.</p>
+            </div>
+            <div class="level-item has-text-centered">
+                <img src="assets/subscribe.png" style="width: 40px;">
+                <p class="title">Подписка на любимый кофе</p>
+                <p class="subtitle">Получайте новые пачки кофе<br>
+                    автоматически — без повторных заказов.</p>
+            </div>
+        </nav>
+    </div>
+
+    <div class="shop-container">
+        <aside class="menu">
+            <p class="menu-label">Каталог</p>
+            <ul class="menu-list" style="font-size: 20px;">
+                <li><a>Кофе</a></li>
+                <li><a>Сиропы</a></li>
+                <li><a>Аксессуары</a></li>
+            </ul>
+        </aside>
+
+        <div class="popular-products">
+            <p class="subtitle" style="font-size: 25px;">Популярные продукты</p>
+            <div class="cards-container">
+                <div class="card-of-product-preview">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/assets/images/placeholders/1280x960.png"
+                                    alt="Placeholder image" />
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img src="https://bulma.io/assets/images/placeholders/96x96.png"
+                                            alt="Placeholder image" />
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">John Smith</p>
+                                    <p class="subtitle is-6">@johnsmith</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                                iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
+                                <a href="#">#responsive</a>
+                                <br />
+                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-of-product-preview">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/assets/images/placeholders/1280x960.png"
+                                    alt="Placeholder image" />
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img src="https://bulma.io/assets/images/placeholders/96x96.png"
+                                            alt="Placeholder image" />
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">John Smith</p>
+                                    <p class="subtitle is-6">@johnsmith</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                                iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
+                                <a href="#">#responsive</a>
+                                <br />
+                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-of-product-preview">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/assets/images/placeholders/1280x960.png"
+                                    alt="Placeholder image" />
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img src="https://bulma.io/assets/images/placeholders/96x96.png"
+                                            alt="Placeholder image" />
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">John Smith</p>
+                                    <p class="subtitle is-6">@johnsmith</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                                iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
+                                <a href="#">#responsive</a>
+                                <br />
+                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-of-product-preview">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/assets/images/placeholders/1280x960.png"
+                                    alt="Placeholder image" />
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img src="https://bulma.io/assets/images/placeholders/96x96.png"
+                                            alt="Placeholder image" />
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">John Smith</p>
+                                    <p class="subtitle is-6">@johnsmith</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                                iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
+                                <a href="#">#responsive</a>
+                                <br />
+                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-of-product-preview">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/assets/images/placeholders/1280x960.png"
+                                    alt="Placeholder image" />
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img src="https://bulma.io/assets/images/placeholders/96x96.png"
+                                            alt="Placeholder image" />
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">John Smith</p>
+                                    <p class="subtitle is-6">@johnsmith</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                                iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
+                                <a href="#">#responsive</a>
+                                <br />
+                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-of-product-preview">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/assets/images/placeholders/1280x960.png"
+                                    alt="Placeholder image" />
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img src="https://bulma.io/assets/images/placeholders/96x96.png"
+                                            alt="Placeholder image" />
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">John Smith</p>
+                                    <p class="subtitle is-6">@johnsmith</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                                iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
+                                <a href="#">#responsive</a>
+                                <br />
+                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons is-left">
+                <a href="#pricing" class="button is-medium is-light">
+                    <span>Показать больше</span>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
+
+<footer class="my-footer">
+    <div class="footer-container">
+        <div class="reference">
+            <p><strong>Аккаунт</strong></p>
+            <ul>
+                <li><a href="#">Войти</a></li>
+                <li><a href="#">Регистрация</a></li>
+                <li><a href="#">Мои заказы</a></li>
+                <li><a href="#">Корзина</a></li>
+            </ul>
+        </div>
+        <div class="reference">
+            <p><strong>Благодарность</strong></p>
+            <ul>
+                <li><a href="https://www.flaticon.com/free-icon/subscribe_7048370">Subscribe</a></li>
+                <li><a href="https://www.flaticon.com/free-icon/coffee-bean_766390">Coffee Bean</a></li>
+                <li><a href="https://www.flaticon.com/free-icon/shopping-basket_1077979">Shopping Basket</a></li>
+                <li><a href="https://www.flaticon.com/free-icon/quality-control_5430584">Quality Control</a></li>
+                <li><a href="https://www.flaticon.com/free-icon/barista_2442047">Barista</a></li>
+            </ul>
+        </div>
+        <div class="reference">
+            <p><strong>Помощь</strong></p>
+            <ul>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Пользовательское соглашение</a></li>
+            </ul>
+        </div>
+        <div class="last-column">
+            <div class="newsletter">
+                <p class="control has-icons-right">
+                    <input class="input" type="text" placeholder="Подписаться на рассылку" style="width: 25rem;">
+                    <span class="icon is-right">
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="social-media">
+                <p style="margin-top: 12px; font-size: 19px;"><strong>Мы в социальных сетях</strong></p>
+                <div class="field is-grouped">
+                    <a class="button is-small" href="#">
+                        <span class="icon"><i class="fab fa-facebook"></i></span>
+                    </a>
+                    <a class="button is-small" href="#">
+                        <span class="icon"><i class="fab fa-twitter"></i></span>
+                    </a>
+                    <a class="button is-small" href="#">
+                        <span class="icon"><i class="fab fa-instagram"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content has-text-centered">
+        <p>&copy; 2025 SubBean — маркетплейс крафтового кофе</p>
+    </div>
+</footer>
 
 </html>

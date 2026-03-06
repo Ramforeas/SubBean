@@ -1,0 +1,6 @@
+{
+  "cssVariables.lookupFiles": [
+    "**/*.css",
+    "bulma-vars.css"
+  ]
+}
