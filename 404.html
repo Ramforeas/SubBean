@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <title>404 - Страница не найдена</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="my_styles\styles.css">
+</head>
+
+<header>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+
+            <div class="navbar-icon">
+                <img src="assets/favicon_text.png" width="170" height="170">
+            </div>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="index.html" class="navbar-item">
+                    <strong>Главная</strong>
+                </a>
+
+                <a href="leave_feedback.html" class="navbar-item">
+                    <strong>Контакты/Отзыв</strong>
+                </a>
+
+                <div class="panel-block">
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" placeholder="Search" style="width: 35rem;" />
+                        <span class="icon is-left">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button basket">
+                            <img src="assets/basket.png">
+                        </a>
+                        <a class="button is-primary">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="error-container">
+        <div class="columns error-page">
+            <div class="column is-half error-content">
+                <h1>404</h1>
+                <h2 class="error-message" style="font-size: 30px">Упс! Страница, которую вы ищете, не существует.</h2>
+                <p style="font-size: 20px;">Но есть множество других интересных и полезных страниц.</p>
+                <p style="font-size: 20px;">Поищем еще?</p>
+
+                <a href="index.html" class="button is-primary is-medium" style="margin-top: 30px;">На главную</a>
+                
+                <p class="error-report">Если вы уверены, что здесь что-то должно быть, <a href="leave_feedback.html">сообщите нам</a>.</p>
+            </div>
+            <div class="column is-half error-image">
+                <img src="assets/cup.png">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
