@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <title>SubBean | Регистрация</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script defer src="scripts\regFormScript.js"></script>
+    <script defer src="scripts\consoleLogger.js"></script>
+    <link rel="stylesheet" href="my_styles\styles.css">
+</head>
+
+<header></header>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h2 class="title has-text-centered" style="margin-bottom: 28px;">Регистрация</h2>
+            <form id="registrationForm">
+                <div id="full-reg-form" class="columns is-centered" style="border-top: #C7A17A solid 1px;">
+                    <div id="same-reg-form" class="column is-4">
+                        <div class="field">
+                            <label class="label">Кто вы? <span class="has-textdanger">*</span></label>
+                            <div class="control custom-radio">
+                                <label class="radio">
+                                    <input type="radio" name="answer" value="buyer" checked/>
+                                    Покупатель
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="answer" value="seller" />
+                                    Продавец
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">ФИО <span class="has-textdanger">*</span></label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="text" id="fullname" placeholder="Иванов Иван Иванович">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Поле Телефон (текстовое, маска, обязательное) -->
+                        <div class="field">
+                            <label class="label">Телефон <span class="has-textdanger">*</span></label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="tel" id="phone" placeholder="+7 (___) ___-__-__">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-phone"></i>
+                                </span>
+                            </div>
+                            <p class="help" id="phoneHelp">Формат: +7 (XXX) XXXXX-XX</p>
+                        </div>
+
+                        <!-- Поле Email (email, обязательное) -->
+                        <div class="field">
+                            <label class="label">Email <span class="has-textdanger">*</span></label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="email" id="email" placeholder="example@mail.ru">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </div>
+                            <p class="help" id="emailHelp">Введите корректный
+                                email адрес</p>
+                        </div>
+
+                        <!-- Поле Password (password, обязательное) -->
+                        <div class="field">
+                            <label class="label">Придумайте пароль <span class="has-textdanger">*</span></label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="text" id="password" placeholder="********">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-key"></i>
+                                </span>
+                            </div>
+                            <p class="help" id="fullnameHelp">Не менее 8 символов</p>
+                        </div>
+                    </div>
+
+                    <div id="seller-reg-form" class="column is-4" style="display: none;">
+                        <div class="field">
+                            <label class="label">Бренд <span class="has-textdanger">*</span></label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="text" id="brandname" placeholder="Имя бренда">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-coffee"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Описание</label>
+                            <div class="control">
+                                <textarea id="message" class="textarea" placeholder="Описание вашего кофе..." rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Кнопка отправки -->
+                <div class="field is-grouped is-grouped-centered">
+                    <div class="control">
+                        <button type="submit" class="button is-primary">
+                            <span>Зарегистрироваться</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+<footer></footer>
+
+</html>

@@ -244,3 +244,9 @@ footer a:hover, .card-description-feedback a:hover {
 .error-report a:hover {
     border-bottom: #C7A17A solid 1px;
 }
+
+.active-seller {
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
